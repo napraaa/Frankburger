@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Frank Burgers: hamburguesas american food con papas McCain, pachatas, lomos y promos por WhatsApp."
+    />
+    <title>Frank Burgers | American Food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="assets/logofrank.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Frank Burgers inicio">
+        <img src="assets/logofrank.png" alt="Frank Burgers" width="56" height="56" />
+        <span>Frank Burgers</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" data-nav>
+        <a href="#menu">Menú</a>
+        <a href="#promos">Promos</a>
+        <a href="#delivery">Delivery</a>
+        <a class="nav-order" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero hacer un pedido.">
+          Pedir ahora
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-label="Frank Burgers hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/burgers/frankburger.jpeg">
+          <source src="assets/burgercayendo.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow reveal">American food · delivery · WhatsApp</p>
+          <h1 class="reveal">Frank Burgers</h1>
+          <p class="hero-copy reveal">
+            Blend de carne, cheddar y papas McCain. Directas, intensas, listas para pedir.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir hamburguesas.">
+              Pedir por WhatsApp
+            </a>
+            <a class="button button-ghost" href="#menu">Ver menú</a>
+          </div>
+        </div>
+
+        <div class="hero-ticket reveal" aria-label="Promo destacada">
+          <span>Promo caliente</span>
+          <strong>2 burgers simples + papas</strong>
+          <b>$16500</b>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Beneficios">
+        <div>
+          <strong>Todo con papas</strong>
+          <span>Burgers servidas con McCain.</span>
+        </div>
+        <div>
+          <strong>Pedido directo</strong>
+          <span>WhatsApp, sin vueltas.</span>
+        </div>
+        <div>
+          <strong>American mood</strong>
+          <span>Cheddar, panceta y salsas potentes.</span>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Menú</p>
+          <h2>La línea completa de Frank</h2>
+          <p>
+            Elegí tu burger favorita en versión simple, doble o triple. Todas salen con papas McCain.
+          </p>
+        </div>
+
+        <div class="price-board reveal" aria-label="Precios de hamburguesas">
+          <div>
+            <span>Simple + papas</span>
+            <strong>$9000</strong>
+          </div>
+          <div>
+            <span>Doble + papas</span>
+            <strong>$10200</strong>
+          </div>
+          <div>
+            <span>Triple + papas</span>
+            <strong>$11400</strong>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="product-card reveal">
+            <img src="assets/burgers/americana.jpeg" alt="Hamburguesa Americana" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Bacon classic</span>
+              <h3>Americana</h3>
+              <p>Blend de carne, panceta, cheddar, cebolla y ketchup.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Americana.">Pedir Americana</a>
+            </div>
+          </article>
+
+          <article class="product-card product-card-featured reveal">
+            <img src="assets/burgers/frankburger.jpeg" alt="Frank Burger" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Firma de la casa</span>
+              <h3>Frank Burger</h3>
+              <p>Blend de carne, panceta, cheddar, lechuga, tomate, cebolla morada y thousand island.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Frank Burger.">Pedir Frank</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/manhattan.jpeg" alt="Hamburguesa Manhattan" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">BBQ mood</span>
+              <h3>Manhattan</h3>
+              <p>Blend de carne, panceta, cheddar, cebolla caramelizada y barbacoa.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Manhattan.">Pedir Manhattan</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/chesseburger.jpeg" alt="Cheese Burger" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Minimal hit</span>
+              <h3>Cheese Burger</h3>
+              <p>Blend de carne, cheddar y salsa thousand island.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Cheese Burger.">Pedir Cheese</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/clasicc.jpeg" alt="Hamburguesa Clasicc" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Old school</span>
+              <h3>Clasicc</h3>
+              <p>Blend de carne, queso tybo, jamón cocido, lechuga, tomate y alioli.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Clasicc.">Pedir Clasicc</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/overhauser.jpeg" alt="Hamburguesa Overhauser" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Crunchy</span>
+              <h3>Overhauser</h3>
+              <p>Blend de carne, cheddar, aros de cebolla, pepinillos, lechuga, tomate, ketchup y mayonesa.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Overhauser.">Pedir Overhauser</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/hollywood.jpeg" alt="Hamburguesa Hollywood" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Star stack</span>
+              <h3>Hollywood</h3>
+              <p>Pan, blend de carne, mayonesa, ketchup, cheddar, panceta y huevo.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Hollywood.">Pedir Hollywood</a>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <img src="assets/burgers/street.jpeg" alt="Hamburguesa Street" loading="lazy" />
+            <div class="product-info">
+              <span class="product-tag">Smoky street</span>
+              <h3>Street</h3>
+              <p>Pan, blend de carne, cheddar, cebolla blanca, panceta ahumada y barbacoa.</p>
+              <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Street.">Pedir Street</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section specials-section" aria-label="Pachatas y lomos">
+        <div class="split-heading reveal">
+          <div>
+            <p class="eyebrow">Más Frank</p>
+            <h2>Para hambre seria</h2>
+          </div>
+          <p>Lomos y pachatas con pan, carne, verdes frescos, huevo, jamón, queso tybo y alioli.</p>
+        </div>
+
+        <div class="special-grid">
+          <article class="special-card reveal">
+            <img src="assets/pachata/pachata.jpeg" alt="Pachata Frank" loading="lazy" />
+            <div>
+              <span class="product-tag">Pachatas</span>
+              <h3>Pachata</h3>
+              <p>Pan, carne de lomo, lechuga, tomate, jamón cocido, queso tybo, omelette y alioli.</p>
+              <div class="card-bottom">
+                <strong>$13000</strong>
+                <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir una Pachata.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="special-card reveal">
+            <img src="assets/lomos/lomo.jpg" alt="Lomo Frank" loading="lazy" />
+            <div>
+              <span class="product-tag">Lomos</span>
+              <h3>Lomo</h3>
+              <p>Pan, bife de lomo, lechuga, tomate, huevo, jamón cocido, queso tybo y alioli de ajo.</p>
+              <div class="card-bottom">
+                <strong>$14000</strong>
+                <a class="order-link" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero pedir un Lomo.">Pedir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section promo-section" id="promos">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Promociones</p>
+          <h2>Combos para compartir. O no.</h2>
+          <p>Promos directas, con papas incluidas y listas para salir por delivery.</p>
+        </div>
+
+        <div class="promo-grid">
+          <article class="promo-card promo-hot reveal">
+            <span>Más pedida</span>
+            <h3>2 burgers simples + papas</h3>
+            <strong>$16500</strong>
+            <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero la promo de 2 burgers simples con papas.">Pedir promo</a>
+          </article>
+          <article class="promo-card reveal">
+            <span>Doble golpe</span>
+            <h3>2 burgers dobles + papas</h3>
+            <strong>$18900</strong>
+            <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero la promo de 2 burgers dobles con papas.">Pedir promo</a>
+          </article>
+          <article class="promo-card reveal">
+            <span>Mesa completa</span>
+            <h3>3 burgers simples + papas</h3>
+            <strong>$25500</strong>
+            <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero la promo de 3 burgers simples con papas.">Pedir promo</a>
+          </article>
+          <article class="promo-card reveal">
+            <span>Pachata squad</span>
+            <h3>2 pachatas + papas</h3>
+            <strong>$26000</strong>
+            <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero la promo de 2 pachatas con papas.">Pedir promo</a>
+          </article>
+          <article class="promo-card reveal">
+            <span>Lomo night</span>
+            <h3>2 lomos + papas</h3>
+            <strong>$27000</strong>
+            <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero la promo de 2 lomos con papas.">Pedir promo</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="order-band" id="delivery">
+        <div class="order-band-inner reveal">
+          <p class="eyebrow">Delivery</p>
+          <h2>Tu pedido sale por WhatsApp.</h2>
+          <p>Armá la burger, elegí la promo y mandá el mensaje. Frank se encarga del resto.</p>
+          <a class="button button-primary" href="#" data-whatsapp data-order="Hola Frank Burgers, quiero hacer un pedido por delivery.">
+            Pedir ahora
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <img src="assets/logofrank.png" alt="Frank Burgers" width="72" height="72" loading="lazy" />
+        <p>Frank Burgers</p>
+        <span>American Food · Delivery</span>
+      </div>
+      <nav aria-label="Links de pie">
+        <a href="#menu">Menú</a>
+        <a href="#promos">Promos</a>
+        <a href="#" data-whatsapp data-order="Hola Frank Burgers, quiero hacer un pedido.">WhatsApp</a>
+      </nav>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      href="#"
+      aria-label="Pedir por WhatsApp"
+      data-whatsapp
+      data-order="Hola Frank Burgers, quiero hacer un pedido."
+    >
+      Pedir
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
