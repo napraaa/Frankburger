@@ -41,10 +41,19 @@
 
     <main>
       <section class="hero" id="inicio" aria-label="Frank Burgers hero">
-        <!-- FIX: 1 -->
-        <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/burgers/frankburger.jpeg">
-          <source src="assets/burgercayendo.mp4" type="video/mp4" />
-        </video>
+        <!-- FIX: 1 (iOS Strict Autoplay) -->
+        <video 
+          class="hero-video" 
+          src="assets/burgercayendo.mp4"
+          type="video/mp4"
+          autoplay="autoplay" 
+          muted="muted" 
+          loop="loop" 
+          playsinline="playsinline" 
+          webkit-playsinline="webkit-playsinline"
+          poster="assets/burgers/frankburger.jpeg"
+          style="pointer-events: none;"
+        ></video>
         <div class="hero-shade"></div>
 
         <div class="hero-content">

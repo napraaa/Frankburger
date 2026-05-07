@@ -113,9 +113,13 @@ document.addEventListener("DOMContentLoaded", () => {
       playPromise.catch(() => {
         // Si el autoplay está bloqueado (modo ahorro de batería, etc), 
         // lo forzamos con el primer tap en la pantalla
-        document.body.addEventListener('touchstart', () => {
+        const forcePlay = () => {
           heroVideo.play();
-        }, { once: true });
+          document.body.removeEventListener('touchstart', forcePlay);
+          document.body.removeEventListener('click', forcePlay);
+        };
+        document.body.addEventListener('touchstart', forcePlay, { once: true });
+        document.body.addEventListener('click', forcePlay, { once: true });
       });
     }
   }

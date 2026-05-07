@@ -220,6 +220,14 @@ a {
   opacity: 0.74;
 }
 
+/* FIX: 1 (Ocultar botón gigante de play en iOS) */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-start-playback-button,
+.hero-video::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
+
 .hero-shade {
   z-index: -2;
   background:
