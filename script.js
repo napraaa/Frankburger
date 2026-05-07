@@ -99,6 +99,27 @@ document.addEventListener("DOMContentLoaded", () => {
     target?.scrollIntoView({ block: "start" });
   });
 
+  // FIX: 1 - Forzar autoplay en iOS
+  const heroVideo = document.querySelector(".hero-video");
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+    heroVideo.playsInline = true;
+    heroVideo.setAttribute("playsinline", "");
+    heroVideo.setAttribute("webkit-playsinline", "");
+    
+    const playPromise = heroVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // Si el autoplay está bloqueado (modo ahorro de batería, etc), 
+        // lo forzamos con el primer tap en la pantalla
+        document.body.addEventListener('touchstart', () => {
+          heroVideo.play();
+        }, { once: true });
+      });
+    }
+  }
+
   const revealItems = [...document.querySelectorAll(".reveal")].filter((item) => !item.closest(".hero"));
 
   if ("IntersectionObserver" in window) {
