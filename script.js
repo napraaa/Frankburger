@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setHeaderState();
   window.addEventListener("scroll", setHeaderState, { passive: true });
 
+  // FIX: 3 - Menú hamburguesa con toggle JS puro
   navToggle?.addEventListener("click", () => {
     const isOpen = nav?.classList.toggle("is-open");
     navToggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
